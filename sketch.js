@@ -30,20 +30,21 @@ var slider;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  song = loadSound("Alive.mp3", loaded);
+  song = loadSound("Alive.mp3",loaded);
   slider = createSlider (0,1,05, 0.01);
-  song.setVolume (0.5);
 }
-function loaded () {
+
+function loaded() {
   song.play();
 }
+
 
 function draw() {
   r=map(mouseX,0,width,0,255);
   background(r,0,b); 
-  song.setVolume (slider.value());
+  song.setVolume(slider.value());
   
-}
+  
 //left/right eyebrow animation  
   if (up) {
     oval1.y--;
