@@ -30,7 +30,7 @@ var slider;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  song = loadSound("Alive.mp3",loaded);
+  song = loadSound("Sound/Alive.mp3",loaded);
   slider = createSlider (0,1,05, 0.01);
 }
 
